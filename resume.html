@@ -1,0 +1,541 @@
+
+<!doctype html>
+<html lang='en'>
+<head>
+    <!-- Required meta tags -->
+    <meta charset='utf-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <!-- Resume Site CSS -->
+    <link rel='stylesheet' href='/static/css/style.css' />
+    <!-- Link to Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300&display=swap" rel="stylesheet">
+    <!-- FontAwesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script defer src="static/all.min.js"></script>
+    <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.js"></script>
+    <!-- jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <!-- Favicon -->
+    <link rel='icon' href='/static/images/favicon.ico' type='image/x-icon' sizes='16x16' />
+    <!-- Title -->
+    <title>aarun.info</title>
+</head>
+
+<body class="d-flex flex-column min-vh-100">
+    <!--Navigation bar-->
+    <header>
+        <nav class='navbar navbar-expand-lg navbar-dark bg-dark'>
+            <div class='container'>
+                <a class='navbar-brand navbar-dark ' href='/'><img
+                        src='/static/images/favicon.ico' width='30' height='30'
+                        class='d-inline-block align-top' alt=''> aarun.info</a>
+                <button class='navbar-toggler' type='button' data-bs-toggle='collapse'
+                    data-bs-target='#navbarSupportedContent' aria-controls='navbarSupportedContent'
+                    aria-expanded='false' aria-label='Toggle navigation'>
+                    <span class='navbar-toggler-icon'></span>
+                </button>
+                <div class='collapse navbar-collapse in' id='navbarSupportedContent'>
+                    <ul class='navbar-nav me-auto mb-2 mb-lg-0'>
+                        <li class='nav-item dropdown'>
+                            <a class='nav-link dropdown-toggle' href='#' id='navbarDropdown' role='button'
+                                data-bs-toggle='dropdown' aria-expanded='false'>About</a>
+                            <ul class='dropdown-menu dropdown-menu-dark' aria-labelledby='navbarDropdown'>
+                                <li><a class='dropdown-item' href='/resume.html'>Resume</a>
+                                </li>
+                                <hr class='dropdown-divider'>
+                                <li><a class='dropdown-item' href='/experience.html'>
+                                        Tech Stack</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href='/projects.html'>Projects</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <!--End Navigation bar-->
+    <main>
+        <br>
+<div class='container px-3 px-lg-5'>
+    <article class="resume-wrapper mx-auto theme-bg-light p-5 mb-5 my-5 shadow-lg">
+        <div class="resume-header">
+            <div class="row align-items-center">
+                <div class="resume-title col-12 col-md-6 col-lg-8 col-xl-9">
+                    <h2 class="resume-name mb-0 text-uppercase">Aarun Jury</h2>
+                    <div class="resume-tagline mb-3 mb-md-0">IT Professional</div>
+                </div>
+                <!--//resume-title-->
+                <div class="resume-contact col-12 col-md-6 col-lg-4 col-xl-3">
+                    <ul class="list-unstyled mb-0">
+                        <li class="mb-2"><i class="fas fa-globe fa-fw fa-lg me-2"></i><a class="resume-link"
+                                href="https://aarun.info">aarun.info</a></li>
+                        <li class="mb-2"><i class="fas fa-envelope-square fa-fw fa-lg me-2"></i><a class="resume-link"
+                                href="mailto:me@aarun.info">me@aarun.info</a></li>
+                        <li class="mb-0"><i class="fas fa-map-marker-alt fa-fw fa-lg me-2"></i>Brisbane, Australia</li>
+                    </ul>
+                </div>
+                <!--//resume-contact-->
+            </div>
+            <!--//row-->
+        </div>
+        <!--//resume-header-->
+        <hr>
+        <div class="resume-intro py-3">
+            <div class="row align-items-center">
+                <div class="col text-start">
+                    <p class="mb-0">Experienced in both retail and sales, I made a career change in mid-2019 to pursue my passion for technology. Since then, I have completed a Bachelor of Information Technology, majoring in Computer Science at Queensland University of Technology, and a Graduate Certificate of Cyber Security from the University of Queensland. My areas of professional interest include cloud infrastructure and architecture, networking, and cyber security. I have also earned several professional certifications, which are detailed below.</p>
+                </div>
+                <!--//col-->
+            </div>
+        </div>
+        <!--//resume-intro-->
+        <hr>
+        <div class="resume-body">
+            <div class="row">
+                <aside class="resume-aside col-12 col-lg-4 col-xl-3 px-lg-4 pb-lg-4">
+                    <section class="skills-section py-3">
+                        <h3 class="text-uppercase resume-section-heading mb-4">Skills</h3>
+                        <div class="item">
+                            <h4 class="item-title">Technical</h4>
+                            <ul class="list-unstyled resume-skills-list">
+                                <li class="mb-2">AWS</li>
+                                <li class="mb-2">DevOps</li>
+                                <li class="mb-2">IaC/Terraform</li>
+                                <li class="mb-2">CI/CD (GitLab/Azure DevOps)</li>
+                                <li class="mb-2">Python</li>
+                                <li class="mb-2">Docker</li>
+                                <li class="mb-2">Linux/Red Hat</li>
+                                <li class="mb-2">SAFe/Agile</li>
+                            </ul>
+                            <p>For a more comprehensive overview, go <a href='/tech'>here.</a>
+                            </p>
+                        </div>
+                        <!--//item-->
+                    </section>
+                    <!--//skills-section-->
+                    <section class="education-section py-3">
+                        <h3 class="text-uppercase resume-section-heading mb-4">Education</h3>
+                        <ul class="list-unstyled resume-education-list">
+                            <li class="mb-3">
+                                <div class="resume-degree font-weight-bold">Bachelor of Information Technology (Computer
+                                    Science) with Distinction</div>
+                                <div class="resume-degree-org text-muted">Queensland University of Technology</div>
+                                <div class="resume-degree-time text-muted">2019 - 2022</div>
+                            </li>
+                            <li class="mb-3">
+                                <div class="resume-degree font-weight-bold">Graduate Certificate of Cyber Security</div>
+                                <div class="resume-degree-org text-muted">University of Queensland</div>
+                                <div class="resume-degree-time text-muted">2024</div>
+                            </li>
+                        </ul>
+                    </section>
+                    <!--//education-section-->
+                    <section class="certifications-section py-3">
+                        <h3 class="text-uppercase resume-section-heading mb-4">Certifications</h3>
+                        <ul class="list-unstyled resume-interests-list mb-0">
+                            <li class="mb-2">AWS Certified Cloud Practitioner</li>
+                            <li class="mb-2">AWS Certified Solutions Architect - Associate</li>
+                            <li class="mb-2">ISC2 CC - Certified in Cybersecurity</li>
+                            <li class="mb-2">ITIL v4 Foundation</li>
+                        </ul>
+                    </section>
+                    <!--//certifications-section-->
+                    <section class="education-section py-3">
+                        <h3 class="text-uppercase resume-section-heading mb-4">Awards</h3>
+                        <ul class="list-unstyled resume-awards-list">
+                            <li class="mb-3">
+                                <div class="font-weight-bold">QUT Faculty of Science Dean's List of Students with
+                                    Excellent Academic
+                                    Performance</div>
+                            </li>
+                            <li class="mb-3">
+                                <div class="font-weight-bold">QUT School of Information Systems Best Sessional Academic 2023</div>
+                            </li>
+                        </ul>
+                    </section>
+                    <!--//awards-section-->
+                </aside>
+                <!--//resume-aside-->
+                <div class="resume-main col-12 col-lg-8 col-xl-9 pe-0 pe-lg-5">
+                    <section class="work-section py-3">
+                        <h3 class="text-uppercase resume-section-heading mb-4">Employment History</h3>
+                        <div class="item">
+                            <div class="item-heading row align-items-center">
+                                <h4 class="item-title col-12">Cloud Engineer
+                                </h4>
+                            </div>
+                            <div class="item-meta col-12 text-muted text-start">Australian Taxation Office
+                                | October 2023 - Current</div>
+                            <div class="item-content">
+                                <p></p>
+                                <ul class="resume-list">
+                                    <li>Responding to and working with internal stakeholders (application teams) requests using ITSM (ServiceNow).</li>
+                                    <li>Managing cloud resources with Infrastructure as Code (Terraform).</li>
+                                    <li>Managing a library of base and utility Docker images for our team use and consumption by app teams.</li>
+                                    <li>Monitoring and reacting to AWS Security Hub findings.</li>
+                                    <li>Managing work backlog (Azure DevOps).</li>
+                                    <li>Security remediation.</li>
+                                    <li>Platform enhancements/enabling and on-boarding of new AWS services.</li>
+                                    <li>Complete other engineering tasks as directed by technical lead.</li>
+                                    <li>Administered team GitLab instance including server maintenance, upgrades and patching.</li>
+                                    <li>Assisted in the migration of ~300 IaC Git repositories and their associated CI/CD pipelines from GitLab to Azure DevOps.</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <br>
+                        <!--//item-->
+                        <div class="item">
+                            <div class="item-heading row align-items-center">
+                                <h4 class="item-title col-12">Cloud Systems Administrator
+                                </h4>
+                            </div>
+                            <div class="item-meta col-12 text-muted text-start">Australian Taxation Office
+                                | July 2023 - October 2023</div>
+                            <div class="item-content">
+                                <p></p>
+                                <ul class="resume-list">
+                                    <li>Performed Identity and Access Management related tasks e.g., creating new AWS multi-environment accounts and new user cloud accounts.</li>
+                                    <li>Making changes to infrastructure with Infrastructure-as-Code (Terraform) and CI/CD (GitLab Pipelines).</li>
+                                    <li>Managing IAM policies, groups, and roles.</li>
+                                    <li>Managing internal requests using ITSM (ServiceNow).</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <br>
+                        <!--//item-->
+                        <div class="item">
+                            <div class="item-heading row align-items-center">
+                                <h4 class="item-title col-12">Junior Systems Analyst</h4>
+                            </div>
+                            <div class="item-meta col-12 text-muted text-start">Australian Taxation Office
+                                | October 2022 - July 2023</div>
+                            <div class="item-content">
+                                <p></p>
+                                <ul class="resume-list">
+                                    <li>Assisted with the scheduling of a $2.5B registry transformation program.</li>
+                                    <li>Conducted widget readiness sessions.</li>
+                                    <li>Documented internal processes.</li>
+                                </ul>
+                                <h6 class="col-12">Key Achievements:</h6>
+                                <ul style='list-style: square;'>
+                                    <li>Participated in overtime to:
+                                        <ul>
+                                            <li>Assist in migrating the organisation from SharePoint 13 to SharePoint Online</li>
+                                            <li>Process paper Director ID applications to help clear national, 10-month backlog</li>
+                                            <li>Contact taxpayers who weren't up to date with their obligations in the lead up to tax-time 2023 to urge them to lodge and/or pay.</li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <hr>
+                        <!--//item-->
+                        <div class="item">
+                            <div class="item-heading row align-items-center">
+                                <h4 class="item-title col-12">Sessional Academic/Acting
+                                    Unit Co-Ordinator</h4>
+                            </div>
+                            <div class="item-meta col-12 text-muted text-start">Queensland University of Technology
+                                | February 2022 - Current</div>
+                            <br>
+                            <div class="item-content">
+                                <p>As part of the teaching team for IAB207 (AQF Level 7) and IFN557 (AQF Level 9) Rapid
+                                    Web
+                                    App Development, we teach students the Model, View, Controller (MVC) framework for
+                                    rapidly
+                                    prototyping and deploying responsive web apps.
+                                    The unit leans on technologies such as SQLite/PostgreSQL for the model, HTML
+                                    and CSS, including Bootstrap, for the view and the Python Flask library for the
+                                    controller.
+                                    This unit also introduces students to concepts such as Agile software development
+                                    principles as
+                                    well as version control.</p>
+                                <ul class="resume-list">
+                                    <li>Conduct weekly 2-hour workshops with multiple classes of 25-30 students.</li>
+                                    <li>Teaching the content discussed in the previous week lecture.</li>
+                                    <li>Assessing and grading two/three major assignments.</li>
+                                    <li>Maintain the <a href="https://github.com/IAB207-QUT/">example code</a> used in
+                                        each unit.</li>
+                                </ul>
+                                <h6 class="col-12">Key Achievements:</h6>
+                                <ul style='list-style: square;'>
+                                    <li>Asked to perform unit co-ordinator duties one semester for both units while our usual UC was unavailable due to injury</li>
+                                    <li>Granted additional appointments by the university to modernise the unit learning material to keep pace with changing software dependencies and syntax</li>
+                                    <li>Helped improve student engagement and satisfaction by facilitating a transition in direct communication platform from Slack to Discord.</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <hr>
+                        <!--//item-->
+                        <div class="item">
+                            <div class="item-heading row align-items-center">
+                                <h4 class="item-title col-12">Territory Specialist</h4>
+                            </div>
+                            <div class="item-meta col-12 text-muted text-start">Bose
+                                | April 2022 - January 2023</div>
+                            <br>
+                            <div class="item-content">
+                                <ul class="resume-list">
+                                    <li>Call on top 50 JB Hi-Fi, Harvey Norman and Myer stores across Brisbane and the
+                                        Gold Coast.</li>
+                                    <li>Perform routine technical maintenance on all Bose displays and fixtures in
+                                        partner stores, as well as display updates and product refreshes.</li>
+                                </ul>
+                                <h6 class="col-12">Key Achievements:</h6>
+                                <ul style='list-style: square;'>
+                                    <li>After delivering highly satisfactory results in my first 6 months in the field, I was offered a contract to support the delivery of training relating to new product releases (though ultimately had to decline having already committed to commencing full-time with the ATO).</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <hr>
+                        <!--//item-->
+                        <div class="item">
+                            <div class="item-heading row align-items-center">
+                                <h4 class="item-title col-12">Territory Manager</h4>
+                            </div>
+                            <div class="item-meta col-12 text-muted text-start">Jabra
+                                | April 2021 - January 2022</div>
+                            <br>
+                            <div class="item-content">
+                                <ul class="resume-list">
+                                    <li>Conduct regular call cycle across South-East Queensland visiting JB Hi-Fi,
+                                        Harvey Norman and Officeworks.</li>
+                                    <li>Building and maintaining relationships between supplier and stores for a brand
+                                        with no prior field representation.</li>
+                                    <li>Conduct one-to-one and one-to-many training sessions in-store.</li>
+                                </ul>
+                                <h6 class="col-12">Key Achievements:</h6>
+                                <ul style='list-style: square;'>
+                                    <li>Building relationships in retailer stores for Jabra for the first time as they had previously not had field representation</li>
+                                    <li>Negotiated floor space and provided sales incentives with franchisees.</li>    
+                                </ul>
+                            </div>
+                        </div>
+                        <hr>
+                        <!--//item-->
+                        <div class="item">
+                            <div class="item-heading row align-items-center">
+                                <h4 class="item-title col-12">Data Analyst</h4>
+                            </div>
+                            <div class="item-meta col-12 text-muted text-start">Telstra | June 2019 - April 2021
+                            </div>
+                            <div class="item-content">
+                                <p></p>
+                                <ul class="resume-list">
+                                    <li>Importing daily raw sales data from data cube.</li>
+                                    <li>Extrapolating and manipulating this data using intermediate techniques in Excel
+                                        to generate a variety of bespoke reporting.</li>
+                                    <li>Providing insights and recommendations to senior retail leadership team (State,
+                                        Territory and Store Managers).</li>
+                                </ul>
+                                <h6 class="col-12">Key Achievements:</h6>
+                                <ul style='list-style: square;'>
+                                    <li>I was seconded to this role from the Telstra store environment by the state manager, after just three months in store, in recognition of my high performance</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <hr>
+                        <!--//item-->
+                        <div class="item">
+                            <div class="item-heading row align-items-center">
+                                <h4 class="item-title col-12">MINI Brand Manager and Used
+                                    Vehicles Sales Manager</h4>
+                            </div>
+                            <div class="item-meta col-12 text-muted text-start">Motorline BMW and MINI Garage | May 2015
+                                - May 2019</div>
+                            <div class="item-content">
+                                <p></p>
+                                <ul class="resume-list">
+                                    <li>Led a team of three Sales Consultants, MINI Genius and Finance & Insurance
+                                        Manager.</li>
+                                    <li>Designed bespoke and targeted local marketing campaigns to drive business within our Prime Marketing Area.</li>
+                                    <li>Responsible for inventory management including ordering and buying stock.</li>
+                                    <li>Responsible for target achievement, sales reporting, and supplier rebate negotiation.</li>
+                                </ul>
+                                <h6 class="col-12">Key Achievements:</h6>
+                                <ul style='list-style: square;'>
+                                    <li>Promoted from sales consultant to assistant sales manager before being promoted again</li>
+                                    <li>#2 and #1 for (individual) sales nationally (MINI Academy winner 2016 and 2017)</li>
+                                    <li>Runner-up MINI Dealer of the Year 2017</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <hr>
+                        <!--//item-->
+                        <div class="item">
+                            <div class="item-heading row align-items-center">
+                                <h4 class="item-title col-12">
+                                    Learning and Development Facilitator</h4>
+                            </div>
+                            <div class="item-meta col-12 text-muted text-start">Samsung | October 2012 - May 2015</div>
+                            <div class="item-content">
+                                <p></p>
+                                <ul class="resume-list">
+                                    <li>Sales and product coaching for Samsung Brand Ambassador program as well as
+                                        retail partner staff (Telstra, Optus, Harvey Norman, JB Hi-Fi and others).
+                                    </li>
+                                    <li>Confidently presenting training material to both small and large audiences
+                                        (1-100+).</li>
+                                    <li>Developing and executing training curriculum.</li>
+                                    <li>Presenting on new product and in-market devices to both B2B and consumer
+                                        segments.</li>
+                                </ul>
+                                <h6 class="col-12">Key Achievements:</h6>
+                                <ul style='list-style: square;'>
+                                    <li>Soon promoted from Samsung's in-store brand ambassador pilot program to L&D</li>
+                                    <li>Delivered training remotely via Webex, an organisation first (in 2014 to support the Galaxy S5 launch)</li>
+                                    <li>Contributed to organising and delivery of the Galaxy S6 launch to all Telstra QLD staff at GoMA</li>
+                                    <li>Trained 300 staff over 10 nights at Samsung's Brisbane HQ to support the Note 4 market launch.</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <hr>
+                        <!--//item-->
+                        <div class="item">
+                            <div class="item-heading row align-items-center">
+                                <h4 class="item-title col-12">Small Business Specialist
+                                </h4>
+                            </div>
+                            <div class="item-meta col-12 text-muted text-start">Vodafone | September 2011 - October 2012
+                            </div>
+                            <div class="item-content">
+                                <p></p>
+                                <ul class="resume-list">
+                                    <li>Growing Small Business sales in the retail sector.</li>
+                                    <li>Training and coaching of other store members with KPIs focused on increasing
+                                        their sales.</li>
+                                </ul>
+                                <h6 class="col-12">Key Achievements:</h6>
+                                <ul style='list-style: square;'>
+                                    <li>Recognised at quarterly state sales awards every quarter while there for performance in the top 1-3.</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <hr>
+                        <!--//item-->
+                        <div class="item">
+                            <div class="item-heading row align-items-center">
+                                <h4 class="item-title col-12">Area Sales Manager</h4>
+                            </div>
+                            <div class="item-meta col-12 text-muted text-start">Apple
+                                | December 2010 - September 2011</div>
+                            <div class="item-content">
+                                <p></p>
+                                <ul class="resume-list">
+                                    <li>Conducted regular training sessions for the reseller partner staff to improve
+                                        their product knowledge and sales skills.</li>
+                                    <li>Developed and maintained strong relationships with key customers and
+                                        stakeholders to help drive business growth.</li>
+                                    <li>Exceeded sales targets of all Apple products including AppleCare and accessories.
+                                    </li>
+                                </ul>
+                                <h6 class="col-12">Key Achievements:</h6>
+                                <ul style='list-style: square;'>
+                                    <li>Mac unit sales above 100% to target every month</li>
+                                    <li>AppleCare attach rates 25% on Mac (benchmark at the time was 20%).</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <hr>
+                        <!--//item-->
+                        <div class="item">
+                            <div class="item-heading row align-items-center">
+                                <h4 class="item-title col-12">IT Department Co-Ordinator
+                                </h4>
+                            </div>
+                            <div class="item-meta col-12 text-muted text-start">JB
+                                Hi-Fi | April 2008 - December 2010</div>
+                            <div class="item-content">
+                                <p></p>
+                                <ul class="resume-list">
+                                    <li>Managed day-to-day operations of the computer department, ensuring efficient and
+                                        effective delivery of sales and customer service.</li>
+                                    <li>Trained, supervised and led a team of sales staff with a culture of high levels
+                                        of product knowledge and customer service standards.</li>
+                                    <li>Achieved departmental sales targets through effective merchandising, execution
+                                        of promotions and staff training.</li>
+                                </ul>
+                                <h6 class="col-12">Key Achievements:</h6>
+                                <ul style='list-style: square;'>
+                                    <li>Promoted from the warehouse and to Hi-Fi sales, before the IT department co-ordinator role</li>
+                                    <li>Supported by store manager and regional managers in both countries to move from New Zealand to Australia</li>
+                                    <li>Consistently achieved and over-achieved personal and departmental sales budgets.</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <hr>
+                        <!--//item-->
+                        <div class="item">
+                            <div class="item-heading row align-items-center">
+                                <h4 class="item-title col-12">Quality Assurance/Product
+                                    Tester</h4>
+                            </div>
+                            <div class="item-meta col-12 text-muted text-start">Netvalue | April 2007 - May 2010</div>
+                            <div class="item-content">
+                                <p></p>
+                                <ul class="resume-list">
+                                    <li>Testing web-based software developed in-house for bugs as well as usability and compatibility issues in different browser and OS
+                                        environments.</li>
+                                    <li>Junior sysadmin, hosting and DevOps tasks.</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <!--//item-->
+                    </section>
+                    <!--//employment-history-section-->
+                </div>
+                <!--//resume-main-->
+            </div>
+            <!--//row-->
+        </div>
+        <!--//resume-body-->
+        <hr>
+        <div class="resume-footer text-center">
+            <ul class="resume-social-list list-inline mx-auto mb-0 d-inline-block text-muted">
+                <li class="list-inline-item mb-lg-0 me-3"><a class="resume-link"
+                        href="https://www.github.com/aarunjury"><i class="fab fa-github-square fa-2x me-2"
+                            data-fa-transform="down-4"></i><span
+                            class="d-none d-lg-inline-block text-muted">github.com/aarunjury</span></a></li>
+                <li class="list-inline-item mb-lg-0 me-3"><a class="resume-link"
+                        href="https://www.linkedin.com/in/aarunjury"><i class="fab fa-linkedin fa-2x me-2"
+                            data-fa-transform="down-4"></i><span
+                            class="d-none d-lg-inline-block text-muted">linkedin.com/in/aarunjury</span></a></li>
+            </ul>
+        </div>
+        <!-- //footer -->
+    </article>
+</div>
+
+    </main>
+    <footer class="mt-auto">
+        <div class="container">
+            <div class="footer navbar-fixed-bottom">
+                <div class='row'>
+                    <div class='col-sm-12 col-md-6 border-bottom'>
+                        <br>
+                        <p>
+                            Aarun Jury &copy; 2024. All Rights Reserved.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!--Boostrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <script>
+        $(function () {
+            $('.pop').on('click', function () {
+                $('.imagepreview').attr('src', $(this).find('img').attr('src'));
+                $('#imagemodal').modal('show');
+            });
+        });
+    </script>
+</body>
+</html>
