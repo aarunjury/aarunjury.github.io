@@ -1,6 +1,75 @@
-{% extends 'base.html' %} {% block content %}
+<!doctype html>
+<html lang='en'>
+<head>
+    <!-- Required meta tags -->
+    <meta charset='utf-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <!-- Resume Site CSS -->
+    <link rel='stylesheet' href='/static/css/style.css' />
+    <!-- Link to Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300&display=swap" rel="stylesheet">
+    <!-- FontAwesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script defer src="static/all.min.js"></script>
+    <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.js"></script>
+    <!-- jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <!-- Favicon -->
+    <link rel='icon' href='/static/images/favicon.ico' type='image/x-icon' sizes='16x16' />
+    <!-- Title -->
+    <title>aarun.info</title>
+</head>
+
+<body class="d-flex flex-column min-vh-100">
+    <!--Navigation bar-->
+    <header>
+        <nav class='navbar navbar-expand-lg navbar-dark bg-dark'>
+            <div class='container'>
+                <a class='navbar-brand navbar-dark ' href='/'><img
+                        src='/static/images/favicon.ico' width='30' height='30'
+                        class='d-inline-block align-top' alt=''> aarun.info</a>
+                <button class='navbar-toggler' type='button' data-bs-toggle='collapse'
+                    data-bs-target='#navbarSupportedContent' aria-controls='navbarSupportedContent'
+                    aria-expanded='false' aria-label='Toggle navigation'>
+                    <span class='navbar-toggler-icon'></span>
+                </button>
+                <div class='collapse navbar-collapse in' id='navbarSupportedContent'>
+                    <ul class='navbar-nav me-auto mb-2 mb-lg-0'>
+                        <li class='nav-item dropdown'>
+                            <a class='nav-link dropdown-toggle' href='#' id='navbarDropdown' role='button'
+                                data-bs-toggle='dropdown' aria-expanded='false'>About</a>
+                            <ul class='dropdown-menu dropdown-menu-dark' aria-labelledby='navbarDropdown'>
+                                <li><a class='dropdown-item' href='/resume'>Resume</a>
+                                </li>
+                                <hr class='dropdown-divider'>
+                                <li><a class='dropdown-item' href='/tech'>
+                                        Tech Stack</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href='/projects'>Projects</a>
+                        </li>
+                        <!-- <li class="nav-item">
+                            <a class="nav-link btn-toggle" href='#'>Dark Mode</a>
+                        </li> -->
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <!--End Navigation bar-->
+    <main>
+        <br>
+        
+        
+        
+        
 <div class='container'>
-    {% for project in projects %}
+    
     <div class="row justify-content-center">
         <div class="col-xs-12 col-md-8">
             <div class="window mb-2">
@@ -19,31 +88,31 @@
                             <!-- zoom button link -->
                         </div>
                     </div>
-                    {{project.title}}
+                    &#39;Mates-Rates Rent-A-Car&#39;
                     <!-- window title -->
                 </div>
                 <div class="content container">
                     <div class="row">
                         <div class="card-body">
                             <div class="card-title p-1">
-                                <h2>{{project.title}}</h2>
+                                <h2>&#39;Mates-Rates Rent-A-Car&#39;</h2>
                             </div>
                             <div class="row">
                                 <div class="col-xs-12 col-xl-4">
-                                    <a class="pop"><img src="{{project.image}}"
+                                    <a class="pop"><img src="/static/images/mrrc.jpg"
                                             class='float-lg-end img-fluid img-thumbnail rounded d-block'></a>
                                 </div>
                                 <div class="col-xs-12 col-xl-4">
                                     <h6>Description: </h6>
-                                    <p>{{project.description}}</p>
+                                    <p>A fictional console app to facilitate the management of a fleet of vehicles, customers and rentals for a rental car company. Uses Dijkstra&#39;s algorithm to facilitate converting user search queries to Reverse Polish Notation to enable more advanced query expressions.</p>
                                 </div>
                                 <div class="col-xs-12 col-xl-4">
                                     <h6>Technologies: </h6>
-                                    <p><i class="{{project.fontawesome}}"></i> {{project.technologies}}</p>
-                                    {% if project.github %}
-                                    <i class="fab fa-github" aria-hidden="true"></i><a href="{{project.github}}" target="_blank"
+                                    <p><i class="fab fa-microsoft"></i> C#, .NET Core</p>
+                                    
+                                    <i class="fab fa-github" aria-hidden="true"></i><a href="https://github.com/aarunjury/CAB201_Rent_A_Car" target="_blank"
                                         class="m-1">Link to repo</a>
-                                    {% endif %}
+                                    
                                 </div>
                             </div>
                         </div>
@@ -64,6 +133,417 @@
             </div>
         </div>
     </div>
-    {% endfor %}
+    
+    <div class="row justify-content-center">
+        <div class="col-xs-12 col-md-8">
+            <div class="window mb-2">
+                <div class="titlebar">
+                    <div class="buttons">
+                        <div class="close">
+                            <a class="closebutton" href="#"><span id="mac"><strong>x</strong></span></a>
+                            <!-- close button link -->
+                        </div>
+                        <div class="minimize">
+                            <a class="minimizebutton" href="#"><span id="mac"><strong>&ndash;</strong></span></a>
+                            <!-- minimize button link -->
+                        </div>
+                        <div class="zoom">
+                            <a class="zoombutton" href="#"><span id="mac"><strong>+</strong></span></a>
+                            <!-- zoom button link -->
+                        </div>
+                    </div>
+                    Tool Library
+                    <!-- window title -->
+                </div>
+                <div class="content container">
+                    <div class="row">
+                        <div class="card-body">
+                            <div class="card-title p-1">
+                                <h2>Tool Library</h2>
+                            </div>
+                            <div class="row">
+                                <div class="col-xs-12 col-xl-4">
+                                    <a class="pop"><img src="/static/images/toollibrary.jpg"
+                                            class='float-lg-end img-fluid img-thumbnail rounded d-block'></a>
+                                </div>
+                                <div class="col-xs-12 col-xl-4">
+                                    <h6>Description: </h6>
+                                    <p>Another invented console app, the purpose of this program was to critically analyse the implementation of a sorting algorithm. The scenario was that of a community tool library management system. In this case, a Heap Sort algorithm was used for displaying the top 3 most frequently borrowed tools.</p>
+                                </div>
+                                <div class="col-xs-12 col-xl-4">
+                                    <h6>Technologies: </h6>
+                                    <p><i class="fab fa-microsoft"></i> C#, .NET Core</p>
+                                    
+                                    <i class="fab fa-github" aria-hidden="true"></i><a href="https://github.com/aarunjury/CAB301_Tool_Library" target="_blank"
+                                        class="m-1">Link to repo</a>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="imagemodal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <button type="button" class="btn-close justify-content-end" data-bs-dismiss="modal"
+                        aria-label="Close"></button>
+                    <img src="" class="imagepreview" style="width: 100%;">
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="row justify-content-center">
+        <div class="col-xs-12 col-md-8">
+            <div class="window mb-2">
+                <div class="titlebar">
+                    <div class="buttons">
+                        <div class="close">
+                            <a class="closebutton" href="#"><span id="mac"><strong>x</strong></span></a>
+                            <!-- close button link -->
+                        </div>
+                        <div class="minimize">
+                            <a class="minimizebutton" href="#"><span id="mac"><strong>&ndash;</strong></span></a>
+                            <!-- minimize button link -->
+                        </div>
+                        <div class="zoom">
+                            <a class="zoombutton" href="#"><span id="mac"><strong>+</strong></span></a>
+                            <!-- zoom button link -->
+                        </div>
+                    </div>
+                    Volcanoes React App
+                    <!-- window title -->
+                </div>
+                <div class="content container">
+                    <div class="row">
+                        <div class="card-body">
+                            <div class="card-title p-1">
+                                <h2>Volcanoes React App</h2>
+                            </div>
+                            <div class="row">
+                                <div class="col-xs-12 col-xl-4">
+                                    <a class="pop"><img src="/static/images/react.jpg"
+                                            class='float-lg-end img-fluid img-thumbnail rounded d-block'></a>
+                                </div>
+                                <div class="col-xs-12 col-xl-4">
+                                    <h6>Description: </h6>
+                                    <p>A React app written to interface with the Volcanoes API. Built with React, Ag-Grid, Chart.js and React Bootstrap. Note - The Volcanoes API below is v2.0 and contains additional endpoints not provided for this app.</p>
+                                </div>
+                                <div class="col-xs-12 col-xl-4">
+                                    <h6>Technologies: </h6>
+                                    <p><i class="fab fa-react"></i> React,  JavaScript,  JSX,  HTML, CSS/Bootstrap</p>
+                                    
+                                    <i class="fab fa-github" aria-hidden="true"></i><a href="https://github.com/aarunjury/cab230_volcanoes_react_app" target="_blank"
+                                        class="m-1">Link to repo</a>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="imagemodal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <button type="button" class="btn-close justify-content-end" data-bs-dismiss="modal"
+                        aria-label="Close"></button>
+                    <img src="" class="imagepreview" style="width: 100%;">
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="row justify-content-center">
+        <div class="col-xs-12 col-md-8">
+            <div class="window mb-2">
+                <div class="titlebar">
+                    <div class="buttons">
+                        <div class="close">
+                            <a class="closebutton" href="#"><span id="mac"><strong>x</strong></span></a>
+                            <!-- close button link -->
+                        </div>
+                        <div class="minimize">
+                            <a class="minimizebutton" href="#"><span id="mac"><strong>&ndash;</strong></span></a>
+                            <!-- minimize button link -->
+                        </div>
+                        <div class="zoom">
+                            <a class="zoombutton" href="#"><span id="mac"><strong>+</strong></span></a>
+                            <!-- zoom button link -->
+                        </div>
+                    </div>
+                    Volcanoes API
+                    <!-- window title -->
+                </div>
+                <div class="content container">
+                    <div class="row">
+                        <div class="card-body">
+                            <div class="card-title p-1">
+                                <h2>Volcanoes API</h2>
+                            </div>
+                            <div class="row">
+                                <div class="col-xs-12 col-xl-4">
+                                    <a class="pop"><img src="/static/images/volcanoes_api.jpg"
+                                            class='float-lg-end img-fluid img-thumbnail rounded d-block'></a>
+                                </div>
+                                <div class="col-xs-12 col-xl-4">
+                                    <h6>Description: </h6>
+                                    <p>A REST API Node express app performing CRUD operations on a MySQL database. Communicates via POST, PUT and GET requests in JSON. Returns data on Earth&#39;s ~1,300 volcanoes as given by The Smithsonian. Issues JWT&#39;s to authenticated users and exposes additional data when a valid JWT is included in the GET request.</p>
+                                </div>
+                                <div class="col-xs-12 col-xl-4">
+                                    <h6>Technologies: </h6>
+                                    <p><i class="fab fa-node-js"></i> Node.js, knex,  mySQL</p>
+                                    
+                                    <i class="fab fa-github" aria-hidden="true"></i><a href="https://github.com/aarunjury/cab230_volcanoes_api" target="_blank"
+                                        class="m-1">Link to repo</a>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="imagemodal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <button type="button" class="btn-close justify-content-end" data-bs-dismiss="modal"
+                        aria-label="Close"></button>
+                    <img src="" class="imagepreview" style="width: 100%;">
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="row justify-content-center">
+        <div class="col-xs-12 col-md-8">
+            <div class="window mb-2">
+                <div class="titlebar">
+                    <div class="buttons">
+                        <div class="close">
+                            <a class="closebutton" href="#"><span id="mac"><strong>x</strong></span></a>
+                            <!-- close button link -->
+                        </div>
+                        <div class="minimize">
+                            <a class="minimizebutton" href="#"><span id="mac"><strong>&ndash;</strong></span></a>
+                            <!-- minimize button link -->
+                        </div>
+                        <div class="zoom">
+                            <a class="zoombutton" href="#"><span id="mac"><strong>+</strong></span></a>
+                            <!-- zoom button link -->
+                        </div>
+                    </div>
+                    Ticketsmarter
+                    <!-- window title -->
+                </div>
+                <div class="content container">
+                    <div class="row">
+                        <div class="card-body">
+                            <div class="card-title p-1">
+                                <h2>Ticketsmarter</h2>
+                            </div>
+                            <div class="row">
+                                <div class="col-xs-12 col-xl-4">
+                                    <a class="pop"><img src="/static/images/ticketsmarter.jpg"
+                                            class='float-lg-end img-fluid img-thumbnail rounded d-block'></a>
+                                </div>
+                                <div class="col-xs-12 col-xl-4">
+                                    <h6>Description: </h6>
+                                    <p>Built using the Python Flask library, this fictitious web app is a demonstration of dynamically generating web pages using server-side logic. The web app also leans on Twitter Bootstrap to be responsive across multiple viewports.</p>
+                                </div>
+                                <div class="col-xs-12 col-xl-4">
+                                    <h6>Technologies: </h6>
+                                    <p><i class="fab fa-python"></i> Python (Flask), HTML, CSS/Bootstrap, SQLite</p>
+                                    
+                                    <i class="fab fa-github" aria-hidden="true"></i><a href="https://github.com/aarunjury/iab207_assignment3" target="_blank"
+                                        class="m-1">Link to repo</a>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="imagemodal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <button type="button" class="btn-close justify-content-end" data-bs-dismiss="modal"
+                        aria-label="Close"></button>
+                    <img src="" class="imagepreview" style="width: 100%;">
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="row justify-content-center">
+        <div class="col-xs-12 col-md-8">
+            <div class="window mb-2">
+                <div class="titlebar">
+                    <div class="buttons">
+                        <div class="close">
+                            <a class="closebutton" href="#"><span id="mac"><strong>x</strong></span></a>
+                            <!-- close button link -->
+                        </div>
+                        <div class="minimize">
+                            <a class="minimizebutton" href="#"><span id="mac"><strong>&ndash;</strong></span></a>
+                            <!-- minimize button link -->
+                        </div>
+                        <div class="zoom">
+                            <a class="zoombutton" href="#"><span id="mac"><strong>+</strong></span></a>
+                            <!-- zoom button link -->
+                        </div>
+                    </div>
+                    Maze Generator
+                    <!-- window title -->
+                </div>
+                <div class="content container">
+                    <div class="row">
+                        <div class="card-body">
+                            <div class="card-title p-1">
+                                <h2>Maze Generator</h2>
+                            </div>
+                            <div class="row">
+                                <div class="col-xs-12 col-xl-4">
+                                    <a class="pop"><img src="/static/images/maze.jpg"
+                                            class='float-lg-end img-fluid img-thumbnail rounded d-block'></a>
+                                </div>
+                                <div class="col-xs-12 col-xl-4">
+                                    <h6>Description: </h6>
+                                    <p>A Java app written for a fabricated client to generate solvable mazes for publication.</p>
+                                </div>
+                                <div class="col-xs-12 col-xl-4">
+                                    <h6>Technologies: </h6>
+                                    <p><i class="fab fa-java"></i> Java, Swing, SQL/mariaDB</p>
+                                    
+                                    <i class="fab fa-github" aria-hidden="true"></i><a href="https://github.com/aarunjury/CAB302-MazeTool" target="_blank"
+                                        class="m-1">Link to repo</a>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="imagemodal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <button type="button" class="btn-close justify-content-end" data-bs-dismiss="modal"
+                        aria-label="Close"></button>
+                    <img src="" class="imagepreview" style="width: 100%;">
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="row justify-content-center">
+        <div class="col-xs-12 col-md-8">
+            <div class="window mb-2">
+                <div class="titlebar">
+                    <div class="buttons">
+                        <div class="close">
+                            <a class="closebutton" href="#"><span id="mac"><strong>x</strong></span></a>
+                            <!-- close button link -->
+                        </div>
+                        <div class="minimize">
+                            <a class="minimizebutton" href="#"><span id="mac"><strong>&ndash;</strong></span></a>
+                            <!-- minimize button link -->
+                        </div>
+                        <div class="zoom">
+                            <a class="zoombutton" href="#"><span id="mac"><strong>+</strong></span></a>
+                            <!-- zoom button link -->
+                        </div>
+                    </div>
+                    Social Distancing Device
+                    <!-- window title -->
+                </div>
+                <div class="content container">
+                    <div class="row">
+                        <div class="card-body">
+                            <div class="card-title p-1">
+                                <h2>Social Distancing Device</h2>
+                            </div>
+                            <div class="row">
+                                <div class="col-xs-12 col-xl-4">
+                                    <a class="pop"><img src="/static/images/social.jpg"
+                                            class='float-lg-end img-fluid img-thumbnail rounded d-block'></a>
+                                </div>
+                                <div class="col-xs-12 col-xl-4">
+                                    <h6>Description: </h6>
+                                    <p>A minimum viable product for a social distancing monitor. Software written in vanilla C runs on the microprocessor and interfaces with a variety of lights and sensors. The entire system is emulated at TinkerCAD at the link. Note - though Arduino hardware is emulated, the Arduino software library was not used.</p>
+                                </div>
+                                <div class="col-xs-12 col-xl-4">
+                                    <h6>Technologies: </h6>
+                                    <p><i class="fas fa-microchip"></i> C, ATmega328P microcontroller</p>
+                                    
+                                    <i class="fab fa-github" aria-hidden="true"></i><a href="https://github.com/aarunjury/cab202_assignment" target="_blank"
+                                        class="m-1">Link to repo</a>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="imagemodal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <button type="button" class="btn-close justify-content-end" data-bs-dismiss="modal"
+                        aria-label="Close"></button>
+                    <img src="" class="imagepreview" style="width: 100%;">
+                </div>
+            </div>
+        </div>
+    </div>
+    
 </div>
-{% endblock %}
+
+    </main>
+    <footer class="mt-auto">
+        <div class="container">
+            <div class="footer navbar-fixed-bottom">
+                <div class='row'>
+                    <div class='col-sm-12 col-md-6 border-bottom'>
+                        <br>
+                        <p>
+                            Aarun Jury &copy; 2024. All Rights Reserved.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!--Boostrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <script>
+        $(function () {
+            $('.pop').on('click', function () {
+                $('.imagepreview').attr('src', $(this).find('img').attr('src'));
+                $('#imagemodal').modal('show');
+            });
+        });
+    </script>
+</body>
+</html>
