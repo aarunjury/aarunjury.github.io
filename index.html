@@ -7,7 +7,7 @@
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <!-- Resume Site CSS -->
-    <link rel='stylesheet' href='{{url_for("static", filename="css/style.css")}}' />
+    <link rel='stylesheet' href='static/css/style.css' />
     <!-- Link to Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -19,7 +19,7 @@
     <!-- jQuery -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <!-- Favicon -->
-    <link rel='icon' href='{{url_for("static", filename="images/favicon.ico")}}' type='image/x-icon' sizes='16x16' />
+    <link rel='icon' href='static/images/favicon.ico' type='image/x-icon' sizes='16x16' />
     <!-- Title -->
     <title>aarun.info</title>
 </head>
@@ -30,7 +30,7 @@
         <nav class='navbar navbar-expand-lg navbar-dark bg-dark'>
             <div class='container'>
                 <a class='navbar-brand navbar-dark ' href='/'><img
-                        src='{{url_for("static", filename="images/favicon.ico")}}' width='30' height='30'
+                        src='static/images/favicon.ico' width='30' height='30'
                         class='d-inline-block align-top' alt=''> aarun.info</a>
                 <button class='navbar-toggler' type='button' data-bs-toggle='collapse'
                     data-bs-target='#navbarSupportedContent' aria-controls='navbarSupportedContent'
@@ -43,19 +43,13 @@
                             <a class='nav-link dropdown-toggle' href='#' id='navbarDropdown' role='button'
                                 data-bs-toggle='dropdown' aria-expanded='false'>About</a>
                             <ul class='dropdown-menu dropdown-menu-dark' aria-labelledby='navbarDropdown'>
-                                <li><a class='dropdown-item' href='{{url_for("main.resume")}}'>Resume</a>
-                                </li>
-                                <hr class='dropdown-divider'>
-                                <li><a class='dropdown-item' href='{{url_for("main.experience")}}'>
+                                <li><a class='dropdown-item' href='experience.html'>
                                         Tech Stack</a></li>
                             </ul>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href='{{url_for("main.projects")}}'>Projects</a>
+                            <a class="nav-link" href='projects.html'>Projects</a>
                         </li>
-                        <!-- <li class="nav-item">
-                            <a class="nav-link btn-toggle" href='#'>Dark Mode</a>
-                        </li> -->
                     </ul>
                 </div>
             </div>
@@ -63,6 +57,55 @@
     </header>
     <!--End Navigation bar-->
     <main>
+        <div class='container'>
+            <div class="row justify-content-center">
+                <div class="col-12 col-xl-8">
+                    <div class="window">
+                        <div class="titlebar">
+                            <div class="buttons">
+                                <div class="close">
+                                    <a class="closebutton" href="#"><span id="mac"><strong>x</strong></span></a>
+                                    <!-- close button link -->
+                                </div>
+                                <div class="minimize">
+                                    <a class="minimizebutton" href="#"><span id="mac"><strong>&ndash;</strong></span></a>
+                                    <!-- minimize button link -->
+                                </div>
+                                <div class="zoom">
+                                    <a class="zoombutton" href="#"><span id="mac"><strong>+</strong></span></a>
+                                    <!-- zoom button link -->
+                                </div>
+                            </div>
+                            aarun.info
+                            <!-- window title -->
+                        </div>
+                        <div class="content p-2">
+                            <div class="row">
+                                <h2>About Me</h2>
+                            </div>
+                            <div class="row">
+                                <p>
+                                    Hi! My name's Aarun and I am a Computer Science graduate and IT professional.
+                                    After 10 years in retail and sales, in the middle of 2019, I decided to embark on a new
+                                    chapter and pursue a career in IT.
+                                    <br>
+                                    I created this website as a way for any prospective employers to get to
+                                    know me a little better than what your typical resume affords. If that's you,
+                                    welcome!
+                                    <br>
+                                    To see my resume, scroll down</a>
+                                    or to see the tech stack I have experience with, click <a
+                                        href='experience.html'>here</a>. You can also go to projects <a
+                                        href="projects.html">here</a>,
+                                    to see a list of coursework related software projects of mine.
+                                </p>
+                            </div>
+                            <!-- window content -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
         <div class='container px-3 px-lg-5'>
             <article class="resume-wrapper mx-auto theme-bg-light p-5 mb-5 my-5 shadow-lg">
                 <div class="resume-header">
@@ -114,7 +157,7 @@
                                         <li class="mb-2">Linux/Red Hat</li>
                                         <li class="mb-2">SAFe/Agile</li>
                                     </ul>
-                                    <p>For a more comprehensive overview, go <a href='{{url_for("main.experience")}}'>here.</a>
+                                    <p>For a more comprehensive overview, go <a href='experience.html'>here.</a>
                                     </p>
                                 </div>
                                 <!--//item-->
@@ -520,7 +563,7 @@
                     <div class='col-sm-12 col-md-6 border-bottom'>
                         <br>
                         <p>
-                            Aarun Jury &copy; {{year}}. All Rights Reserved.
+                            Aarun Jury &copy; 2024. All Rights Reserved.
                         </p>
                     </div>
                 </div>
