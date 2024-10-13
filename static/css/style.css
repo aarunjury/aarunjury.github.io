@@ -1,0 +1,306 @@
+html, body{
+  font-family: 'Inter', sans-serif;
+}
+
+body { 
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-smooth: auto;
+}
+
+h1, h2, h3, h4, h5, h6 {
+font-weight: bold;
+}
+
+figcaption{
+  font-size: x-small;
+  font-style: italic;
+  color: grey;
+}
+
+#home-image{
+  max-height: 325px;
+  object-fit: cover;
+  }
+
+#logo-image{
+  max-height: 80px;
+  object-fit: cover;
+}
+
+/*********** Resume **********/
+.resume-wrapper {
+border: 1px solid rgba(0, 0, 0, 0.025);
+}
+
+.resume-section-heading {
+position: relative;
+padding-left: 1rem;
+font-size: 1.125rem;
+letter-spacing: 0.15rem;
+}
+
+.resume-name {
+font-size: 2.75rem;
+font-weight: 900;
+letter-spacing: 0.4rem;
+}
+
+.resume-tagline {
+font-size: 1.25rem;
+font-weight: 300;
+}
+
+.resume-contact {
+border-left: 1px solid rgba(0, 0, 0, 0.08);
+font-size: 0.75rem;
+}
+
+
+.resume-profile-image {
+max-width: 120px;
+}
+
+.resume-intro {
+font-size: 0.875rem;
+}
+
+.item-title {
+  font-size: 1rem;
+  margin-bottom: 0;
+}
+
+.item-meta {
+ font-size: 0.8rem;
+}
+.item-content {
+  font-size: 0.875rem;
+}
+
+.item {
+  font-size: 0.875rem;
+}
+
+.resume-aside {
+border-right: 1px solid rgba(0, 0, 0, 0.08);
+}
+
+.resume-education-list, .resume-awards-list {
+  font-size: 0.875rem;
+}
+
+.resume-degree-time-org, .resume-degree-time {
+font-size: 0.75rem;
+}
+
+.resume-lang-list, .resume-interests-list {
+font-size: 0.875rem;
+}
+
+.resume-social-list {
+font-size: 0.75rem;
+}
+
+.resume-profile-image {
+  max-width: 120px;
+}
+
+.resume-section-heading:before {
+  content: "";
+  display: inline-block;
+  width: 5px;
+  height: 100%;
+  background: #000000;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+@media (max-width: 991.98px) {
+
+  .resume-aside {
+    border-left: 0;
+  }
+}
+
+@media (max-width: 767.98px) {
+.resume-contact {
+    border-left: 0;
+  }
+}
+
+.row1 {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 4px;
+}
+
+/* Create four equal columns that sits next to each other */
+.column {
+  flex: 25%;
+  max-width: 25%;
+  padding: 0 4px;
+}
+
+.column img {
+  margin-top: 8px;
+  vertical-align: middle;
+  width: 100%;
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 800px) {
+  .column {
+    flex: 50%;
+    max-width: 50%;
+  }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column {
+    flex: 100%;
+    max-width: 100%;
+  }
+}
+
+/* macOS window */
+/* window BEGIN */
+
+a {
+  text-decoration: none;
+}
+
+#mac {
+  line-height: 9px;
+  vertical-align: 50%;
+}
+
+.window {
+  background: #fff;
+  margin: auto;
+  border: 1px solid #acacac;
+  border-radius: 6px;
+  box-shadow: 0px 0px 20px #acacac;
+}
+
+.titlebar {
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0.0, #ebebeb, color-stop(1.0, #d5d5d5)));
+  background: -webkit-linear-gradient(top, #ebebeb, #d5d5d5);
+  background: -moz-linear-gradient(top, #ebebeb, #d5d5d5);
+  background: -ms-linear-gradient(top, #ebebeb, #d5d5d5);
+  background: -o-linear-gradient(top, #ebebeb, #d5d5d5);
+  background: linear-gradient(top, #ebebeb, #d5d5d5);
+  color: #4d494d;
+  font-size: 11pt;
+  line-height: 20px;
+  text-align: center;
+  width: 100%;
+  height: 20px;
+  border-top: 1px solid #f3f1f3;
+  border-bottom: 1px solid #b1aeb1;
+  border-top-left-radius: 6px;
+  border-top-right-radius: 6px;
+  user-select: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  -o-user-select: none;
+  cursor: default;
+}
+
+.buttons {
+  padding-left: 8px;
+  padding-top: 3px;
+  float: left;
+  line-height: 0px;
+}
+
+.buttons:hover a {
+  visibility: visible;
+}
+
+.close {
+  background: #ff5c5c;
+  font-size: 9pt;
+  width: 11px;
+  height: 11px;
+  border: 1px solid #e33e41;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.close:active {
+  background: #c14645;
+  border: 1px solid #b03537;
+}
+
+.close:active .closebutton {
+  color: #4e0002;
+}
+
+.closebutton {
+  color: #820005;
+  visibility: hidden;
+  cursor: default;
+}
+
+.minimize {
+  background: #ffbd4c;
+  font-size: 9pt;
+  line-height: 11px;
+  margin-left: 4px;
+  width: 11px;
+  height: 11px;
+  border: 1px solid #e09e3e;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.minimize:active {
+  background: #c08e38;
+  border: 1px solid #af7c33;
+}
+
+.minimize:active .minimizebutton {
+  color: #5a2607;
+}
+
+.minimizebutton {
+  color: #9a5518;
+  visibility: hidden;
+  cursor: default;
+}
+
+.zoom {
+  background: #00ca56;
+  font-size: 9pt;
+  line-height: 11px;
+  margin-left: 6px;
+  width: 11px;
+  height: 11px;
+  border: 1px solid #14ae46;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.zoom:active {
+  background: #029740;
+  border: 1px solid #128435;
+}
+
+.zoom:active .zoombutton {
+  color: #003107;
+}
+
+.zoombutton {
+  color: #006519;
+  visibility: hidden;
+  cursor: default;
+}
+
+.content{
+  /* margin-left:1rem; */
+}
+
+/* window END */
