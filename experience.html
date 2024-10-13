@@ -1,0 +1,119 @@
+{% extends 'base.html' %} {% block content %}
+<div class='container'>
+  <div class="row justify-content-center">
+      <div class="col-12 col-xl-8">
+          <div class="window">
+              <div class="titlebar">
+                  <div class="buttons">
+                      <div class="close">
+                          <a class="closebutton" href="#"><span id="mac"><strong>x</strong></span></a>
+                          <!-- close button link -->
+                      </div>
+                      <div class="minimize">
+                          <a class="minimizebutton" href="#"><span id="mac"><strong>&ndash;</strong></span></a>
+                          <!-- minimize button link -->
+                      </div>
+                      <div class="zoom">
+                          <a class="zoombutton" href="#"><span id="mac"><strong>+</strong></span></a>
+                          <!-- zoom button link -->
+                      </div>
+                  </div>
+                  aarun.info
+                  <!-- window title -->
+              </div>
+              <div class="content p-2">
+                  <div class="row">
+                      <h2>About Me</h2>
+                  </div>
+                  <div class="row">
+                      <p>
+                          Hi! My name's Aarun and I am a Computer Science graduate and IT professional.
+                          After 10 years in retail and sales, in the middle of 2019, I decided to embark on a new
+                          chapter and pursue a career in IT.
+                          <br>
+                          I created this website as a way for any prospective employers to get to
+                          know me a little better than what your typical resume affords. If that's you,
+                          welcome!
+                          <br>
+                          To see my resume, click <a href='{{url_for("main.resume")}}'>here</a>
+                          or to see the tech stack I have experience with, click <a
+                              href='{{url_for("main.experience")}}'>here</a>. You can also go to projects <a
+                              href="{{url_for('main.projects')}}">here</a>,
+                          to see a list of coursework related software projects of mine.
+                      </p>
+                  </div>
+                  <!-- window content -->
+              </div>
+          </div>
+      </div>
+  </div>
+</div>
+<div class='container'>
+  <div class="row">
+    <div class="col-12">
+      <div class="window">
+        <div class="titlebar">
+          <div class="buttons">
+            <div class="close">
+              <a class="closebutton" href="#"><span id="mac"><strong>x</strong></span></a>
+              <!-- close button link -->
+            </div>
+            <div class="minimize">
+              <a class="minimizebutton" href="#"><span id="mac"><strong>&ndash;</strong></span></a>
+              <!-- minimize button link -->
+            </div>
+            <div class="zoom">
+              <a class="zoombutton" href="#"><span id="mac"><strong>+</strong></span></a>
+              <!-- zoom button link -->
+            </div>
+          </div>
+          aarun.info
+          <!-- window title -->
+        </div>
+        <div class="content pt-3 ps-2">
+          <div class="row">
+            <h2>Technologies</h2>
+          </div>
+          <div class="row">
+            <h3>Languages</h3>
+            <ul style="padding-left: 2rem; list-style: none;">
+              <li><i class="fab fa-python"></i> Python</li>
+              <li><i class="fab fa-js"></i> JavaScript</li>
+              <li><i class="fab fa-html5"></i> HTML</li>
+              <li><i class="fab fa-css3-alt"></i> CSS</li>
+              <li><i class="fab fa-microsoft"></i> C#</li>
+              <li><i class="fas fa-microchip"></i> C</li>
+              <li><i class="fab fa-java"></i> Java</li>
+            </ul>
+            <br>
+            <h3>Libraries and Frameworks</h3>
+            <ul style="padding-left: 2rem; list-style: none;">
+              <li><i class="fas fa-flask"></i> Flask</li>
+              <li><i class="fab fa-bootstrap"></i> Bootstrap</li>
+              <li><i class="fab fa-node-js"></i> Node.js</li>
+              <li><i class="fab fa-react"></i> ReactJS</li>
+              <li><i class="fab fa-microsoft"></i> .NET/.NET Core</li>
+              <li><i class="fab fa-microsoft"></i> Microsoft PowerApps</li>
+            </ul>
+            <br>
+            <h3>Everything Else</h3>
+            <ul style="padding-left: 2rem; list-style: none;">
+              <li><i class="fas fa-cog"></i> RESTful APIs</li>
+              <li><i class="fas fa-database"></i> SQL: MySQL/SQLite/PostgreSQL</li>
+              <li><i class="fab fa-git-square"></i> Version Control: Git</li>
+              <li><i class="fab fa-jenkins"></i> CI/CD: Jenkins, GitLab Pipelines, Azure DevOps</li>
+              <li><i class="fas fa-solid fa-cloud"></i> Cloud: <i class="fab fa-aws"></i> AWS, <i class="fab fa-microsoft"></i> Azure, <i class="fab fa-digital-ocean"></i> Digital Ocean</li>
+              <li><i class="fab fa-linux"></i> Linux (Red Hat Enterprise Linux, Ubuntu, Kali)</li>
+              <li><i class="fab fa-apple"></i> macOS/iOS/iPadOS</li>
+              <li><i class="fas fa-terminal"></i> SSH/Terminal</li>
+              <li><i class="fab fa-docker"></i> Docker, Artifactory</li>
+              <li><i class="fas fa-server"></i> Hosting: Apache, nginx</li>
+            </ul>
+          </div>
+          <!-- window content -->
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+{% endblock %}
