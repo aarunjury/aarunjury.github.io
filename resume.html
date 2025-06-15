@@ -166,38 +166,30 @@
                                 <h4 class="item-title col-12">Cloud Engineer
                                 </h4>
                             </div>
-                            <div class="item-meta col-12 text-muted text-start">Australian Federal Government
+                            <div class="item-meta col-12 text-muted text-start">Australian Government
                                 | October 2023 - Current</div>
                             <div class="item-content">
                                 <p></p>
                                 <ul class="resume-list">
-                                    <li>Triaging and actioning internal stakeholders requests using IT service management (ITSM) practices and tools (ServiceNow).</li>
-                                    <li>Resolving Incidents and Problems efficiently, utilising ITSM practices.</li>
-                                    <li>Raising Change Requests in accordance with ITSM.</li>
-                                    <li>Administering team GitLab instance including server maintenance, upgrades and patching.</li>
-                                    <li>Manage cloud resources and policies with Infrastructure as Code (Terraform).</li>
-                                    <li>Deploy infrastructure using VMware's vRealize Automation (vRA).</li>
-                                    <li>Monitor internal infrastructure expenditure and performance using cloud-native tools such as
-                                        AWS Cost Explorer and Compute Optimizer.</li>
-                                    <li>Deploy, manage and maintain a suite of Docker container images for internal tooling as well
-                                        as consumption by app teams.</li>
-                                    <li>Optimised deployment pipelines for secure and more reliable production releases.</li>
-                                    <li>Monitoring and addressing AWS Security Hub findings.</li>
-                                    <li>Monitoring and maintaining custom AWS CloudWatch dashboards for critical network
-                                        connections</li>
-                                    <li>Maintaining a static, highly available 'down for maintenance' page
-                                        for the organisation and application teams, using AWS CloudFront.</li>
-                                    <li>Managing work backlog items and tasks in Azure DevOps and planning work and projects
-                                        using Agile project management methodology.</li>
-                                    <li>Complete other engineering tasks as directed by technical lead.</li>
-                                    <li>Project work, including but not limited to:
+                                    <li>My team and I are responsible for the continuous delivery of a secure, robust and modern cloud platform. I achieve this by exploiting modern DevSecOps practices through the extensive use of Infrastructure as Code and CI/CD pipelines.</li>
+                                    <li>I utilise ITIL practices and the ServiceNow platform to effectively respond to and assist application teams who require assistance with the platform, as well as to provide timely resolutions to Incidents and Problems that may arise. This includes raising Change Requests as appropriate.</li>
+                                    <li>In addition to the BAU platform management, I have been involved in the delivery of several high-value projects for the organisation. Recently, those have included:</li>
                                         <ul>
-                                            <li>Migrating from GitLab to Azure DevOps.</li>
-                                            <li>Implementing Single Sign-On for AWS within the organisation.</li>
-                                            <li>Security remediation.</li>
-                                            <li>Platform uplift in security classification.</li>
+                                            <li>The migration from GitLab to Azure DevOps. This included setting up new self-hosted build agents, proxy servers, Docker build servers and hosts as well as decommissioning the old product. Additionally, over 300 pipelines had to be migrated from GitLab syntax to Azure Pipelines. 900 Git repositories were also migrated, containing Terraform files relating to the roles, policies and infrastructure for most of AWS for the organisation at a platform level.</li>
+                                            <li>The development of Single Sign-On for AWS within the organisation. This has included the development of all new permission sets for platform roles and application team roles as well as the designing of new patterns that have scalability and security at front of mind. This solution involves integrating AWS IAM Identity Center with Microsoft Entra ID. To assist, I have also developed several bespoke Python scripts (some which are multi-threaded), including one which has generated 800+ Terraform files, saving hundreds of manual hours, and others which use the AWS boto3 API to centrally gather information about the organisation’s cloud resources and policies, to assist in critical decision-making.</li>
+                                            <li>The implementation of a new security analysis tool, Trivy. I have developed a bespoke Docker container image which embeds the Terraform binary and Trivy into a single container image which is used by most of our pipelines. Trivy scans all our Dockerfiles, Terraform files and Python scripts for misconfiguration errors, bugs and security issues or known vulnerabilities. The implementation allowed us to address previously unknown misconfiguration errors.</li>
                                         </ul>
-                                    </li>
+                                    <li>I also maintain a set of bespoke CloudWatch dashboards which are primarily used for measuring the performance and health of the links between AWS and two on-prem data centres, as well as between the organisation's AWS and Azure tenancies.</li>
+                                    <li>Some of the CloudWatch work was done in support of a recent upgrade of the DirectConnect links from IPsec to MACsec, improving not only available bandwidth, but also security and reliability. This project required close co-ordination with AWS, internal stakeholders and colleagues at MacGov.</li>
+                                    <li>Some of my other job tasks include:</li>
+                                        <ul>
+                                            <li>Monitoring internal infrastructure expenditure and performance using cloud-native tools such as AWS Cost Explorer, Compute Optimizer and Cost Optimization Hub.</li>
+                                            <li>Maintaining, managing and deploying a suite of Docker container images for internal tooling as well as consumption by app teams (Debian base images, AWS CLI, Terraform and Python images, as well as JDK and .NET).</li>
+                                            <li>Monitoring and addressing AWS Security Hub findings.</li>
+                                            <li>Maintaining a static, highly available 'down for maintenance' page (maintenance.ato.gov.au) for use by multiple application teams, using AWS CloudFront and Certificate Manager.</li>
+                                            <li>Managing work backlog items and tasks in Azure DevOps and planning work and projects using Agile project management methodology.</li>
+                                            <li>Deploying infrastructure using VMware's vRealize Automation (vRA).</li>
+                                        </ul>
                                 </ul>
                             </div>
                         </div>
@@ -208,15 +200,14 @@
                                 <h4 class="item-title col-12">Cloud Systems Administrator
                                 </h4>
                             </div>
-                            <div class="item-meta col-12 text-muted text-start">Australian Federal Government
+                            <div class="item-meta col-12 text-muted text-start">Australian Government
                                 | July 2023 - October 2023</div>
                             <div class="item-content">
                                 <p></p>
                                 <ul class="resume-list">
-                                    <li>Performed Identity and Access Management related tasks e.g., creating new AWS multi-environment accounts and new user cloud accounts.</li>
-                                    <li>Making changes to infrastructure with Infrastructure-as-Code (Terraform) and CI/CD (GitLab Pipelines).</li>
-                                    <li>Managing IAM policies, groups, and roles.</li>
-                                    <li>Managing internal requests using ITSM (ServiceNow).</li>
+                                    <li>Performed identity and access management (IAM) tasks, including provisioning multi-environment AWS accounts and onboarding new cloud users.</li>
+                                    <li>Collaborated with application teams to implement infrastructure changes, including roles, service control policies (SCPs), and permissions, using Terraform and CI/CD pipelines (GitLab).</li>
+                                    <li>Managed internal service requests and incidents in alignment with ITIL practices, leveraging the ServiceNow ITSM platform</li>
                                 </ul>
                             </div>
                         </div>
@@ -226,7 +217,7 @@
                             <div class="item-heading row align-items-center">
                                 <h4 class="item-title col-12">Junior Systems Analyst</h4>
                             </div>
-                            <div class="item-meta col-12 text-muted text-start">Australian Federal Government
+                            <div class="item-meta col-12 text-muted text-start">Australian Government
                                 | October 2022 - July 2023</div>
                             <div class="item-content">
                                 <p></p>
@@ -237,10 +228,9 @@
                                 </ul>
                                 <h6 class="col-12">Key Achievements:</h6>
                                 <ul style='list-style: square;'>
-                                    <li>Performed acting EL1 IT Technology Specialist role in relief of colleagues on leave</li>
-                                    <li>Led the migration from GitLab to Azure DevOps for AWS platform in a team of three
-                                        engineers (this included the setup of a new fleet of self-hosted build agents and proxy server,
-                                        refactoring hundreds of CI/CD pipelines, and mirroring hundreds of Git repositories)</li>
+                                    <li>Regularly perform in an acting EL1 IT Technology Specialist capacity, providing leadership and continuity during colleague absences.</li>
+                                    <li>Led the migration from GitLab to Azure DevOps for the AWS platform as part of a three-person engineering team, including provisioning new self-hosted build agents and proxy infrastructure, refactoring 300+ CI/CD pipelines, and mirroring 900+ Git repositories.</li>
+                                    <li>Co-designed and led the implementation of AWS Single Sign-On (SSO) integrated with Microsoft Entra ID, supporting access control for 35+ platform owners and over 800 users.</li>
                                 </ul>
                             </div>
                         </div>
@@ -255,26 +245,13 @@
                                 | February 2022 - Current</div>
                             <br>
                             <div class="item-content">
-                                <p>As part of the teaching team for IAB207 (AQF Level 7), IFN557 and IFN582 (AQF Levels 8/9) Rapid
-                                    Web App Development, we teach students the Model, View, Controller (MVC) framework for
-                                    rapidly prototyping and deploying responsive web apps.
-                                    The unit leans on technologies such as SQLite/PostgreSQL for the model, HTML
-                                    and CSS, including Bootstrap, for the view and the Python Flask library for the
-                                    controller.
-                                    This unit also introduces students to concepts such as Agile software development
-                                    principles as well as version control (Git).</p>
-                                <ul class="resume-list">
-                                    <li>Conduct weekly 2-hour workshops with multiple classes of 25-30 students.</li>
-                                    <li>Teaching the content discussed in the previous week lecture.</li>
-                                    <li>Assessing and grading two/three major assignments.</li>
-                                    <li>Maintain the <a href="https://github.com/IAB207-QUT?tab=repositories">example code</a> used in
-                                        each unit.</li>
-                                </ul>
+                                <p>My primary role as a sessional academic is teaching web development across three units: IAB207 (AQF Level 7), IFN557 (AQF Levels 8-9, now retired), and IFN582 (AQF Levels 8-9). These units focus on equipping students with practical skills in full-stack web application development, using the Model-View-Controller (MVC) framework. Core technologies include Python Flask for the controller, HTML/CSS with Bootstrap for the view, and SQLite or MySQL for the model. The curriculum also covers Agile software development principles, version control with Git/GitHub, and responsive design best practices. I was also responsible for the development and maintenance of the <a href="https://github.com/IAB207-QUT?tab=repositories">example code</a> used in some of those units.</p>
                                 <h6 class="col-12">Key Achievements:</h6>
                                 <ul style='list-style: square;'>
-                                    <li>Asked to perform unit co-ordinator duties one semester for both units while our usual UC was unavailable due to injury</li>
-                                    <li>Granted additional appointments by the university to modernise the unit learning material to keep pace with changing software dependencies and syntax</li>
-                                    <li>Helped improve student engagement and satisfaction by facilitating a transition in direct communication platform from Slack to Discord.</li>
+                                    <li>Performed acting Unit Coordinator duties for both IAB207 and IFN557 in Semester 1, 2023, ensuring continuity of teaching and assessment in the lead's absence.</li>
+                                    <li>Engaged by the university on additional contracts to update and modernise unit content, aligning course materials with evolving frameworks, languages, and dependencies.</li>
+                                    <li>Led a transition from Slack to Discord as the primary student communication channel, resulting in improved engagement and support outcomes.</li>
+                                    <li>Recognised as 'Best Sessional Academic' in 2023 by the Head of School of Information Systems for excellence in teaching and student support.</li>
                                 </ul>
                             </div>
                         </div>
@@ -289,14 +266,12 @@
                             <br>
                             <div class="item-content">
                                 <ul class="resume-list">
-                                    <li>Call on top 50 JB Hi-Fi, Harvey Norman and Myer stores across Brisbane and the
-                                        Gold Coast.</li>
-                                    <li>Perform routine technical maintenance on all Bose displays and fixtures in
-                                        partner stores, as well as display updates and product refreshes.</li>
+                                    <li>Responsible for managing top-tier retail accounts, including JB Hi-Fi, Harvey Norman, and Myer, across Brisbane and the Gold Coast.</li>
+                                    <li>Conduct regular technical maintenance on Bose displays and fixtures in partner stores, ensuring optimal performance and presentation.</li>
                                 </ul>
                                 <h6 class="col-12">Key Achievements:</h6>
                                 <ul style='list-style: square;'>
-                                    <li>After delivering highly satisfactory results in my first 6 months in the field, I was offered a contract to support the delivery of training relating to new product releases (though ultimately had to decline having already committed to commencing full-time with the ATO).</li>
+                                    <li>Successfully delivered training sessions on new product releases to store staff, significantly enhancing product knowledge and sales effectiveness.</li>
                                 </ul>
                             </div>
                         </div>
@@ -311,15 +286,12 @@
                             <br>
                             <div class="item-content">
                                 <ul class="resume-list">
-                                    <li>Conduct regular call cycle across South-East Queensland visiting JB Hi-Fi,
-                                        Harvey Norman and Officeworks.</li>
-                                    <li>Building and maintaining relationships between supplier and stores for a brand
-                                        with no prior field representation.</li>
-                                    <li>Conduct one-to-one and one-to-many training sessions in-store.</li>
+                                    <li>Executed a regular call cycle across South-East Queensland, engaging key retail partners including JB Hi-Fi, Harvey Norman, and Officeworks.</li>
+                                    <li>•	Delivered targeted one-on-one and group training sessions to store staff, enhancing product knowledge and sales capability.</li>
                                 </ul>
                                 <h6 class="col-12">Key Achievements:</h6>
                                 <ul style='list-style: square;'>
-                                    <li>Building relationships in retailer stores for Jabra for the first time as they had previously not had field representation</li>
+                                    <li>Successfully pioneered Jabra's in-store presence in multiple retail chains, building foundational relationships from the ground up.</li>
                                     <li>Negotiated floor space and provided sales incentives with franchisees.</li>    
                                 </ul>
                             </div>
@@ -335,15 +307,13 @@
                             <div class="item-content">
                                 <p></p>
                                 <ul class="resume-list">
-                                    <li>Importing daily raw sales data from data cube.</li>
-                                    <li>Extrapolating and manipulating this data using intermediate techniques in Excel
-                                        to generate a variety of bespoke reporting.</li>
-                                    <li>Providing insights and recommendations to senior retail leadership team (State,
-                                        Territory and Store Managers).</li>
+                                    <li>Extracted and processed daily retail sales data from Telstra's internal data cube, transforming raw inputs into actionable reporting using Excel (including advanced formulas, pivot tables, and lookup functions).</li>
+                                    <li>Produced tailored reporting and dashboards to support strategic decision-making across the State, Territory, and Store Manager levels.</li>
+                                    <li>Delivered data-driven insights and recommendations to senior retail leadership, supporting performance tracking, sales optimisation, and forecasting.</li>
                                 </ul>
                                 <h6 class="col-12">Key Achievements:</h6>
                                 <ul style='list-style: square;'>
-                                    <li>I was seconded to this role from the Telstra store environment by the state manager, after just three months in store, in recognition of my high performance</li>
+                                    <li>Chosen for secondment to the role by the State Manager (Telstra Store Network) after only three months in-store, recognising strong performance and analytical acumen.</li>
                                 </ul>
                             </div>
                         </div>
@@ -359,17 +329,16 @@
                             <div class="item-content">
                                 <p></p>
                                 <ul class="resume-list">
-                                    <li>Led a team of three Sales Consultants, MINI Genius and Finance & Insurance
-                                        Manager.</li>
-                                    <li>Designed bespoke and targeted local marketing campaigns to drive business within our Prime Marketing Area.</li>
-                                    <li>Responsible for inventory management including ordering and buying stock.</li>
-                                    <li>Responsible for target achievement, sales reporting, and supplier rebate negotiation.</li>
+                                    <li>Led a sales team comprising three Sales Consultants, one MINI Genius, and a Finance & Insurance Manager.</li>
+                                    <li>Developed and executed bespoke local marketing campaigns targeting the Prime Marketing Area to drive sales growth.</li>
+                                    <li>Managed inventory, including ordering new vehicle stock and sourcing used cars to meet market demand.</li>
+                                    <li>Accountable for achieving sales targets, preparing monthly sales reports, and negotiating supplier rebates.</li>
                                 </ul>
                                 <h6 class="col-12">Key Achievements:</h6>
                                 <ul style='list-style: square;'>
-                                    <li>Promoted from sales consultant to assistant sales manager before being promoted again</li>
-                                    <li>#2 and #1 for (individual) sales nationally (MINI Academy winner 2016 and 2017)</li>
-                                    <li>Runner-up MINI Dealer of the Year 2017</li>
+                                    <li>Progressed rapidly from Sales Consultant to Assistant Sales Manager, followed by promotion to Brand Manager.</li>
+                                    <li>Ranked #2 and #1 nationally for individual MINI sales; awarded MINI Academy Winner in 2016 and 2017.</li>
+                                    <li>Achieved Runner-up status for MINI Dealer of the Year in 2017.</li>
                                 </ul>
                             </div>
                         </div>
@@ -384,21 +353,17 @@
                             <div class="item-content">
                                 <p></p>
                                 <ul class="resume-list">
-                                    <li>Sales and product coaching for Samsung Brand Ambassador program as well as
-                                        retail partner staff (Telstra, Optus, Harvey Norman, JB Hi-Fi and others).
-                                    </li>
-                                    <li>Confidently presenting training material to both small and large audiences
-                                        (1-100+).</li>
-                                    <li>Developing and executing training curriculum.</li>
-                                    <li>Presenting on new product and in-market devices to both B2B and consumer
-                                        segments.</li>
+                                    <li>Delivered sales and product coaching for the Samsung Brand Ambassador program and retail partner staff, including Telstra, Optus, Harvey Norman, and JB Hi-Fi.                                    </li>
+                                    <li>Presented training sessions confidently to diverse audiences ranging from small groups to 100+ attendees.</li>
+                                    <li>Developed and rolled out new training materials to keep teams up to date with the latest product knowledge and sales techniques.</li>
+                                    <li>Conducted product presentations for both B2B and consumer staff on new and in-market Samsung devices.</li>
                                 </ul>
                                 <h6 class="col-12">Key Achievements:</h6>
                                 <ul style='list-style: square;'>
-                                    <li>Soon promoted from Samsung's in-store brand ambassador pilot program to L&D</li>
-                                    <li>Delivered training remotely via Webex, an organisation first (in 2014 to support the Galaxy S5 launch)</li>
-                                    <li>Contributed to organising and delivery of the Galaxy S6 launch to all Telstra QLD staff at GoMA</li>
-                                    <li>Trained 300 staff over 10 nights at Samsung's Brisbane HQ to support the Note 4 market launch.</li>
+                                    <li>Rapidly promoted from in-store Brand Ambassador pilot program to Learning & Development.</li>
+                                    <li>Pioneered remote training delivery via Webex in 2014, supporting the Galaxy S5 launch across remote and regional Queensland.</li>
+                                    <li>Contributed to the organising and delivery of the Galaxy S6 launch to all Telstra QLD staff at Brisbane's Gallery of Modern Art.</li>
+                                    <li>	Trained over 300 staff during a 10-night program at Samsung Brisbane HQ to support the Galaxy Note 4 product launch.</li>
                                 </ul>
                             </div>
                         </div>
